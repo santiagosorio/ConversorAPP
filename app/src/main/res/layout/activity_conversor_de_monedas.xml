@@ -4,20 +4,17 @@
     android:id="@+id/activity_conversor_de_monedas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@color/azure"
     tools:context="beerbear.conversorapp.Conversor_de_monedas">
 
    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/titulo"
-        android:textColor="@color/brown"
+        android:textColor="@color/darkorange"
         android:gravity="center"
-        android:textSize="35sp"
+        android:textSize="40sp"
         android:textStyle="italic|bold"/>
 
     <LinearLayout
@@ -34,8 +31,8 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_height="match_parent"
             android:src="@drawable/usa"
             android:layout_gravity="center" />
 
@@ -52,6 +49,8 @@
             android:hint="Pesos"
             android:inputType="numberDecimal"
             android:id="@+id/pesos"
+            android:background="@color/white"
+            android:textSize="25dp"
             />
         <EditText
             android:layout_width="0dp"
@@ -60,6 +59,8 @@
             android:hint="Dolares"
             android:inputType="numberDecimal"
             android:id="@+id/dolares"
+            android:background="@color/white"
+            android:textSize="25dp"
             />
 
     </LinearLayout>
@@ -72,8 +73,20 @@
         android:id="@+id/bConvert"
         android:textSize="25dp"
         android:textStyle="bold"
-
-        android:text="@string/Convertir"/>
+        android:text="@string/Convertir"
+        android:layout_margin="5dp"
+        android:layout_gravity="bottom"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkorange"
+        android:background="@color/gray"
+        android:id="@+id/bClear"
+        android:text="@string/clear"
+        android:textSize="25dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        />
 
 
 </LinearLayout>

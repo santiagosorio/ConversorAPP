@@ -3,4 +3,5 @@
     <string name="mensaje">Hola Mundo</string>
     <string name="titulo">CONVERSOR</string>
     <string name="Convertir">Convertir</string>
+    <string name="clear">Limpiar</string>
 </resources>

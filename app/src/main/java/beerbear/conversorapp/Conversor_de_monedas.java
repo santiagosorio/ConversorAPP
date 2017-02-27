@@ -6,11 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Conversor_de_monedas extends AppCompatActivity {
 
     EditText ePesos, eDolares;
-    Button bConvertir;
+    Button bConvertir, bClear;
 
     Double pesos, dolares;
 
@@ -22,24 +23,41 @@ public class Conversor_de_monedas extends AppCompatActivity {
         ePesos = (EditText) findViewById(R.id.pesos);
         eDolares = (EditText) findViewById(R.id.dolares);
         bConvertir = (Button) findViewById(R.id.bConvert);
+        bClear = (Button) findViewById(R.id.bClear);
 
         bConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               // pesos = Double.parseDouble(ePesos.getText().toString());
 
-
+                if (!ePesos.getText().toString().equals("") && !eDolares.getText().toString().equals("")){
+                    Toast.makeText(Conversor_de_monedas.this, "Ambos campos están llenos", Toast.LENGTH_SHORT).show();
+                }
+                if (ePesos.getText().toString().equals("") && eDolares.getText().toString().equals("")){
+                    Toast.makeText(Conversor_de_monedas.this, "Digite una cantidad", Toast.LENGTH_SHORT).show();
+                }
                 if (ePesos.getText().toString().equals("")  && !eDolares.getText().toString().equals("")){
-                    dolares =Double.parseDouble(eDolares.getText().toString());
-                    pesos = dolares/3000;
+                    dolares = Double.parseDouble(eDolares.getText().toString());
+                    pesos = dolares*3000;
                     ePesos.setText(pesos.toString());
                 }
+                if (!ePesos.getText().toString().equals("")  && eDolares.getText().toString().equals("")){
+                    pesos = Double.parseDouble(ePesos.getText().toString());
+                    dolares = pesos/3000;
+                    eDolares.setText(dolares.toString());
+                    }
 
 
             }
         });
 
+        bClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                eDolares.setText("");
+                ePesos.setText("");
+            }
+        });
 
 
     }

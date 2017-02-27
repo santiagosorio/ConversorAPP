@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ConversorAPP.iml" filepath="$PROJECT_DIR$/../ConversorAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/areas.iml" filepath="$PROJECT_DIR$/areas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../calculapp/calculapp.iml" filepath="$PROJECT_DIR$/../calculapp/calculapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../resistenciapp/resistenciapp.iml" filepath="$PROJECT_DIR$/../resistenciapp/resistenciapp.iml" />
+    </modules>
+  </component>
+</project>

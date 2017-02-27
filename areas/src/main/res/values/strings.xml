@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Areas</string>
+    <string name="cir">Circulo</string>
+    <string name="tri">Triangulo</string>
+    <string name="cua">Cuadrado</string>
+    <string name="cub">Cubo</string>
+    <string name="Tittle">Figuras Geometricas</string>
+    <string name="tittle2">Operaciones</string>
+    <string name="opArea">Area</string>
+    <string name="opPerim">Perimetro</string>
+    <string name="opVol">Volumen</string>
+    <string name="lado">Ingrese el Lado</string>
+    <string name="base">Ingrese la Base</string>
+    <string name="alto">Ingrese la Altura</string>
+    <string name="radio">Ingrese el Radio</string>
+    <string name="result">Resultado :</string>
+    <string name="calc">Calcular</string>
+    <string name="clear">Limpiar</string>
+</resources>
